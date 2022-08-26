@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{    
+    color: #1D3557;
+}
+hr{
+opacity: 0.5;
+}
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+body{
+    background-color: rgb(241, 241, 241);
+
+}
+div{
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem;
+    text-align: center;
+}
+#container{
+    width: 70%;
+}
+#customizer div{
+    display: inline-block;
+    font-size: 1.3rem;
+}
+#password_lenght div{
+    display: block;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    
+}
+#lenght{
+    height: 3rem;
+    width: 15rem;
+}
+#lenght_label{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+#password_div span{
+    word-wrap: break-word;    
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+#default_text span{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#password_div, #customizer{
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: -1px -1px 9px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: -1px -1px 9px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: -1px -1px 9px 0px rgba(0,0,0,0.3);
+}
+
+/******Buttons******/
+
+#generate, #copy{
+    text-transform: uppercase;
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    color: #F1FAEE ;
+    background-color: #457B9D ;
+}
+i{
+    color: #F1FAEE ;
+}
+#generate:hover,#copy:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#generate:active,#copy:active{
+    transform: scale(0.8);
+    background-color: #1D3557 ;
+
+}
+
+
+/*********Checkboxes*********/
+
+#checkboxes
+{
+    text-align: left;
+}
+.checked { 
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; 
+    width: 1px;
+    margin: -1px;
+    padding: 0; 
+    border: 0;
+}
+
+.checked + label {
+    position: relative;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    height: 22px;
+    margin: 0.4rem;
+     
+}
+.checked + label::before { 
+    content: " "; 
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-right: 3px; 
+    width: 16px; 
+    height: 16px; 
+    background-color: rgb(255, 249, 238); 
+    border-width: 3px; 
+    border-style: solid; 
+    border-color: rgb(204, 204, 204); 
+    border-radius: 6px; 
+    box-shadow: none;
+}
+
+
+.checked:checked + label::after { 
+    content: " "; 
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjMDAwMDAwIiBkPSJNMTczLjg5OCA0MzkuNDA0bC0xNjYuNC0xNjYuNGMtOS45OTctOS45OTctOS45OTctMjYuMjA2IDAtMzYuMjA0bDM2LjIwMy0zNi4yMDRjOS45OTctOS45OTggMjYuMjA3LTkuOTk4IDM2LjIwNCAwTDE5MiAzMTIuNjkgNDMyLjA5NSA3Mi41OTZjOS45OTctOS45OTcgMjYuMjA3LTkuOTk3IDM2LjIwNCAwbDM2LjIwMyAzNi4yMDRjOS45OTcgOS45OTcgOS45OTcgMjYuMjA2IDAgMzYuMjA0bC0yOTQuNCAyOTQuNDAxYy05Ljk5OCA5Ljk5Ny0yNi4yMDcgOS45OTctMzYuMjA0LS4wMDF6Ii8+PC9zdmc+"); 
+    background-repeat: no-repeat; 
+    background-size: 10px 10px; 
+    background-position: center center; 
+    position: absolute; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px; 
+    left: 0px; 
+    top: 0px; 
+    text-align: center; 
+    background-color: transparent; 
+    font-size: 10px; 
+    height: 22px; 
+    width: 22px; 
+}
